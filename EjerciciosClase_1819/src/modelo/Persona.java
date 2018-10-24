@@ -31,16 +31,12 @@ public class Persona {
 	
 	 
 	 public int caminar (int numPasos) {
-		 
 		 double a=9.0;
 		 double raiz = Math.sqrt(a);
-		 
 		 Random miRandom = new Random(); // Crea un objeto de la clase "Random"
-		 
 		 int valor = miRandom.nextInt();
-		 
 		 return numPasos * longitudPaso / 100;
-		 
+	 
 	 }
 
 	public String getNif() {

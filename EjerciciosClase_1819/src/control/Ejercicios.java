@@ -174,12 +174,25 @@ public class Ejercicios {
 		}
 		return resultado;
 	}
+	
+	static public Persona[] crearListaPersona (int n)
+	{
+		Persona[] personas = new Persona[n];
+		for(int i=0; i < n; i++)
+			personas [i] = new Persona();	
+		return personas;
+	}
 	public static void main(String[] args) 
 	{	
-
 		//------------------------------------------------------------------------------------------------------------------------------------------------
-		/*
+		//crearListaPersonas [Array] (Constructor Vacío)
+		Ejercicios ejercicios = new Ejercicios ();
+		Persona [] Listapersona = ejercicios.crearListaPersona(5);
+		
+		//------------------------------------------------------------------------------------------------------------------------------------------------
+		
 		//generalListaAleatorios con Array
+		/*
 		Ejercicios ejercicios = new Ejercicios ();
 		int [] listaAleatorios = ejercicios.generaListaAleatorios(5, 1, 6);
 		System.out.println(listaAleatorios); //Imprime caracteres referentes a su dirección (supongo).
